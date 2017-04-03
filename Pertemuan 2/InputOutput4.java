@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class InputOutput4{
+
 	public static void main (String[] args){
 		Scanner input = new Scanner (System.in);
 		String nama;
@@ -20,4 +21,5 @@ public class InputOutput4{
 		System.out.print("Masukan Status Menikah :");
 		menikah = input.nextBoolean();
 	}
+	
 }
