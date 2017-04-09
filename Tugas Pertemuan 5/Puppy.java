@@ -1,4 +1,4 @@
-public class Puppy{
+public class Puppy extends Animals{
 	String breed;
 	int puppyAge;
 	String color;
@@ -13,20 +13,17 @@ public class Puppy{
 	}
 
 	public int getAge(){
-		System.out.println("Puppy's age is :" + puppyAge + " years");
+		System.out.println("Puppy's age is : " + puppyAge + " years");
 		return puppyAge;
+	}
+
+	public void eat(){
+		System.out.println("Puppy eat");
+		super.eat();
 	}
 
 	void barking(){
 		System.out.println("Puppy can barking");
-	}
-
-	void hungry(){
-		System.out.println("Puppy can feel hungry, you should give some food");
-	}
-
-	void sleeping(){
-		System.out.println("Puppy can sleeping, and look so cute");
 	}
 
 	public static void main (String[] args){
@@ -35,8 +32,8 @@ public class Puppy{
 		myPuppy.setAge(2);
 		myPuppy.getAge();
 		myPuppy.barking();
-		myPuppy.hungry();
-		myPuppy.sleeping();
+
+		myPuppy.eat();
 
 	}
 }
