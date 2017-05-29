@@ -1,4 +1,5 @@
-public abstract class Kendaraan{ // ini deklarasi kelas abstrak
+public abstract class Kendaraan implements Mesin{ // ini deklarasi kelas abstrak
+	
 	private String merk;
 	private String tahun_keluaran;
 
